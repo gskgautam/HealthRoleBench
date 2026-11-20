@@ -1,0 +1,81 @@
+classifier,subset,condition,intended_role,support,f1
+llama2,all,original,Anti-Vaccine Advocate,90,0.02197802197802198
+llama2,all,original,Fear Monger,90,0.3486238532110092
+llama2,all,original,Misinformation Spreader,90,0.5142857142857142
+llama2,all,original,Otherwise,90,0.775
+llama2,all,original,Religious Conspiracy Theorist,90,0.9775280898876404
+llama2,all,cue_masked,Anti-Vaccine Advocate,90,0.02197802197802198
+llama2,all,cue_masked,Fear Monger,90,0.3486238532110092
+llama2,all,cue_masked,Misinformation Spreader,90,0.5128205128205128
+llama2,all,cue_masked,Otherwise,90,0.775
+llama2,all,cue_masked,Religious Conspiracy Theorist,90,0.9717514124293786
+llama2,changed_text,original,Anti-Vaccine Advocate,11,0.0
+llama2,changed_text,original,Fear Monger,6,0.9090909090909091
+llama2,changed_text,original,Misinformation Spreader,15,0.75
+llama2,changed_text,original,Otherwise,3,0.75
+llama2,changed_text,original,Religious Conspiracy Theorist,30,1.0
+llama2,changed_text,cue_masked,Anti-Vaccine Advocate,11,0.0
+llama2,changed_text,cue_masked,Fear Monger,6,0.9090909090909091
+llama2,changed_text,cue_masked,Misinformation Spreader,15,0.7317073170731707
+llama2,changed_text,cue_masked,Otherwise,3,0.75
+llama2,changed_text,cue_masked,Religious Conspiracy Theorist,30,0.9830508474576272
+mistral,all,original,Anti-Vaccine Advocate,90,0.7802197802197802
+mistral,all,original,Fear Monger,90,0.8313253012048193
+mistral,all,original,Misinformation Spreader,90,0.496
+mistral,all,original,Otherwise,90,0.7213114754098361
+mistral,all,original,Religious Conspiracy Theorist,90,0.9834254143646409
+mistral,all,cue_masked,Anti-Vaccine Advocate,90,0.7802197802197802
+mistral,all,cue_masked,Fear Monger,90,0.8263473053892215
+mistral,all,cue_masked,Misinformation Spreader,90,0.496
+mistral,all,cue_masked,Otherwise,90,0.7213114754098361
+mistral,all,cue_masked,Religious Conspiracy Theorist,90,0.9888888888888889
+mistral,changed_text,original,Anti-Vaccine Advocate,11,0.8571428571428571
+mistral,changed_text,original,Fear Monger,6,1.0
+mistral,changed_text,original,Misinformation Spreader,15,0.5714285714285714
+mistral,changed_text,original,Otherwise,3,0.4
+mistral,changed_text,original,Religious Conspiracy Theorist,30,0.9836065573770492
+mistral,changed_text,cue_masked,Anti-Vaccine Advocate,11,0.8571428571428571
+mistral,changed_text,cue_masked,Fear Monger,6,0.9230769230769231
+mistral,changed_text,cue_masked,Misinformation Spreader,15,0.5714285714285714
+mistral,changed_text,cue_masked,Otherwise,3,0.4
+mistral,changed_text,cue_masked,Religious Conspiracy Theorist,30,1.0
+qwen,all,original,Anti-Vaccine Advocate,90,0.32061068702290074
+qwen,all,original,Fear Monger,90,0.5252525252525253
+qwen,all,original,Misinformation Spreader,90,0.06382978723404255
+qwen,all,original,Otherwise,90,0.5
+qwen,all,original,Religious Conspiracy Theorist,90,0.8715083798882681
+qwen,all,cue_masked,Anti-Vaccine Advocate,90,0.34328358208955223
+qwen,all,cue_masked,Fear Monger,90,0.5165562913907285
+qwen,all,cue_masked,Misinformation Spreader,90,0.043010752688172046
+qwen,all,cue_masked,Otherwise,90,0.5053763440860215
+qwen,all,cue_masked,Religious Conspiracy Theorist,90,0.8390804597701149
+qwen,changed_text,original,Anti-Vaccine Advocate,11,0.16666666666666666
+qwen,changed_text,original,Fear Monger,6,0.41379310344827586
+qwen,changed_text,original,Misinformation Spreader,15,0.125
+qwen,changed_text,original,Otherwise,3,0.4
+qwen,changed_text,original,Religious Conspiracy Theorist,30,0.9655172413793104
+qwen,changed_text,cue_masked,Anti-Vaccine Advocate,11,0.4
+qwen,changed_text,cue_masked,Fear Monger,6,0.35294117647058826
+qwen,changed_text,cue_masked,Misinformation Spreader,15,0.0
+qwen,changed_text,cue_masked,Otherwise,3,0.46153846153846156
+qwen,changed_text,cue_masked,Religious Conspiracy Theorist,30,0.8679245283018868
+gemma,all,original,Anti-Vaccine Advocate,90,0.5
+gemma,all,original,Fear Monger,90,0.6524822695035462
+gemma,all,original,Misinformation Spreader,90,0.5797101449275363
+gemma,all,original,Otherwise,90,0.5384615384615384
+gemma,all,original,Religious Conspiracy Theorist,90,0.9239766081871345
+gemma,all,cue_masked,Anti-Vaccine Advocate,90,0.4808743169398907
+gemma,all,cue_masked,Fear Monger,90,0.6619718309859155
+gemma,all,cue_masked,Misinformation Spreader,90,0.5745454545454546
+gemma,all,cue_masked,Otherwise,90,0.5116279069767442
+gemma,all,cue_masked,Religious Conspiracy Theorist,90,0.9112426035502958
+gemma,changed_text,original,Anti-Vaccine Advocate,11,0.782608695652174
+gemma,changed_text,original,Fear Monger,6,0.9090909090909091
+gemma,changed_text,original,Misinformation Spreader,15,0.8666666666666667
+gemma,changed_text,original,Otherwise,3,0.8571428571428571
+gemma,changed_text,original,Religious Conspiracy Theorist,30,0.9830508474576272
+gemma,changed_text,cue_masked,Anti-Vaccine Advocate,11,0.6086956521739131
+gemma,changed_text,cue_masked,Fear Monger,6,1.0
+gemma,changed_text,cue_masked,Misinformation Spreader,15,0.7741935483870968
+gemma,changed_text,cue_masked,Otherwise,3,0.5714285714285714
+gemma,changed_text,cue_masked,Religious Conspiracy Theorist,30,0.9473684210526315

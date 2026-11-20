@@ -1,0 +1,5 @@
+role,alignment,potential_overlap,machine_curated_n
+Religious Conspiracy Theorist,Moral–Ideological,Limited (Distinct Moral Framing),7500
+Anti-Vaccine Advocate,Ideological,Fear Monger,7500
+Fear Monger,Emotional,Anti-Vaccine Advocate,7500
+Misinformation Spreader,Low-Intent,Fear Monger,7500

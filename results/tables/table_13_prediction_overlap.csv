@@ -1,0 +1,51 @@
+classifier_1,classifier_2,role,shared_valid_n,agreement_f1
+llama2,mistral,Anti-Vaccine Advocate,1457,0.027210884353741496
+llama2,mistral,Fear Monger,1457,0.39655172413793105
+llama2,mistral,Misinformation Spreader,1457,0.1823966065747614
+llama2,mistral,Otherwise,1457,0.6503401360544218
+llama2,mistral,Religious Conspiracy Theorist,1457,0.936026936026936
+llama2,qwen,Anti-Vaccine Advocate,1425,0.05309734513274336
+llama2,qwen,Fear Monger,1425,0.18717948717948718
+llama2,qwen,Misinformation Spreader,1425,0.004739336492890996
+llama2,qwen,Otherwise,1425,0.5484460694698354
+llama2,qwen,Religious Conspiracy Theorist,1425,0.8975265017667845
+llama2,gemma,Anti-Vaccine Advocate,1457,0.028368794326241134
+llama2,gemma,Fear Monger,1457,0.4435483870967742
+llama2,gemma,Misinformation Spreader,1457,0.6713581984517946
+llama2,gemma,Otherwise,1457,0.6600496277915633
+llama2,gemma,Religious Conspiracy Theorist,1457,0.9
+llama2,gpt4o,Anti-Vaccine Advocate,1463,0.030303030303030304
+llama2,gpt4o,Fear Monger,1463,0.27615062761506276
+llama2,gpt4o,Misinformation Spreader,1463,0.4155124653739612
+llama2,gpt4o,Otherwise,1463,0.6351706036745407
+llama2,gpt4o,Religious Conspiracy Theorist,1463,0.9550173010380623
+mistral,qwen,Anti-Vaccine Advocate,1451,0.1902439024390244
+mistral,qwen,Fear Monger,1451,0.534010152284264
+mistral,qwen,Misinformation Spreader,1451,0.022988505747126436
+mistral,qwen,Otherwise,1451,0.6715328467153284
+mistral,qwen,Religious Conspiracy Theorist,1451,0.882943143812709
+mistral,gemma,Anti-Vaccine Advocate,1484,0.5138888888888888
+mistral,gemma,Fear Monger,1484,0.6888888888888889
+mistral,gemma,Misinformation Spreader,1484,0.24404761904761904
+mistral,gemma,Otherwise,1484,0.47941176470588237
+mistral,gemma,Religious Conspiracy Theorist,1484,0.8949152542372881
+mistral,gpt4o,Anti-Vaccine Advocate,1492,0.8348457350272233
+mistral,gpt4o,Fear Monger,1492,0.690744920993228
+mistral,gpt4o,Misinformation Spreader,1492,0.4430379746835443
+mistral,gpt4o,Otherwise,1492,0.7692307692307693
+mistral,gpt4o,Religious Conspiracy Theorist,1492,0.9638157894736842
+qwen,gemma,Anti-Vaccine Advocate,1454,0.20347394540942929
+qwen,gemma,Fear Monger,1454,0.3833145434047351
+qwen,gemma,Misinformation Spreader,1454,0.0035211267605633804
+qwen,gemma,Otherwise,1454,0.38762886597938145
+qwen,gemma,Religious Conspiracy Theorist,1454,0.8707964601769912
+qwen,gpt4o,Anti-Vaccine Advocate,1459,0.18324607329842932
+qwen,gpt4o,Fear Monger,1459,0.3690205011389522
+qwen,gpt4o,Misinformation Spreader,1459,0.0
+qwen,gpt4o,Otherwise,1459,0.5058548009367682
+qwen,gpt4o,Religious Conspiracy Theorist,1459,0.8987993138936535
+gemma,gpt4o,Anti-Vaccine Advocate,1492,0.5301645338208409
+gemma,gpt4o,Fear Monger,1492,0.6235294117647059
+gemma,gpt4o,Misinformation Spreader,1492,0.48581997533908755
+gemma,gpt4o,Otherwise,1492,0.45786516853932585
+gemma,gpt4o,Religious Conspiracy Theorist,1492,0.9163763066202091

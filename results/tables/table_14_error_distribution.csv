@@ -1,0 +1,21 @@
+true_role,predicted_role,n,percent_of_true_role
+Anti-Vaccine Advocate,Fear Monger,3051,4.52
+Anti-Vaccine Advocate,Misinformation Spreader,2877,4.262222222222222
+Anti-Vaccine Advocate,Otherwise,754,1.117037037037037
+Anti-Vaccine Advocate,Religious Conspiracy Theorist,400,0.5925925925925926
+Fear Monger,Anti-Vaccine Advocate,4644,6.88
+Fear Monger,Misinformation Spreader,2846,4.216296296296297
+Fear Monger,Otherwise,419,0.6207407407407407
+Fear Monger,Religious Conspiracy Theorist,328,0.48592592592592593
+Misinformation Spreader,Anti-Vaccine Advocate,3529,5.228148148148148
+Misinformation Spreader,Fear Monger,2668,3.9525925925925924
+Misinformation Spreader,Otherwise,1582,2.343703703703704
+Misinformation Spreader,Religious Conspiracy Theorist,51,0.07555555555555556
+Otherwise,Anti-Vaccine Advocate,6705,2.4833333333333334
+Otherwise,Fear Monger,5178,1.9177777777777778
+Otherwise,Misinformation Spreader,9674,3.582962962962963
+Otherwise,Religious Conspiracy Theorist,146,0.05407407407407407
+Religious Conspiracy Theorist,Anti-Vaccine Advocate,390,0.5777777777777777
+Religious Conspiracy Theorist,Fear Monger,181,0.26814814814814814
+Religious Conspiracy Theorist,Misinformation Spreader,18,0.02666666666666667
+Religious Conspiracy Theorist,Otherwise,0,0.0

@@ -1,0 +1,6 @@
+generator,bulk_scored_input,bulk_eligible,bulk_selected,accepted_topups,selected
+gpt4o,15900,13099,11120,880,12000
+qwen,15876,7690,7166,4834,12000
+llama2,14743,9869,9584,2416,12000
+mistral,15094,11923,11145,855,12000
+gemma,14184,4344,4344,7656,12000

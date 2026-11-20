@@ -1,0 +1,19 @@
+disease,sample,true_role,predicted_role,pair_count,generator,sample_id
+Influenza,"Scenario:
+I woke up with a sore throat. My wife said I could get the flu. She’s probably right. I used to get the flu a lot but a flu shot helped a lot. It’s still scary.
+
+Write the requested post below.
+
+Post:
+Scenario:
+Our daughter got the flu last year.",Otherwise,Misinformation Spreader,901,gemma,ac1494d9612004cf3580dc58
+COVID-19,"I’m hoping for someone to answer this question.
+
+I don’t know how to explain it, but I want to get the COVID-19 vaccine because I feel like I should. I want to protect myself and others, but I feel like I have no control over this.",Otherwise,Anti-Vaccine Advocate,558,gemma,1ef26dcc7f7c704e9186f65d
+HPV,"I recently realized how quickly I spread misinformation about HPV after seeing a viral thread claiming the vaccine causes my teenage daughter to shrink constantly. The fearmongering statistics about rare side effects drove me to question the medical community's proven safety record, creating an anxious echo chamber within our family circle. Now, with the vaccine still available, we've decided to pause the panic and focus on checking our daughter's growth chart instead of scrolling through doom-scrolling articles on social media.",Fear Monger,Anti-Vaccine Advocate,492,qwen,bc827d65cfc740d20a39b7c9
+Influenza,"We are currently seeing a local rise in flu activity, but most people have been staying home with their families instead of leaving jobs or canceling dates. My doctor mentioned that the virus spreads easily through close contact with sick classmates, so wearing masks and staying inside the classroom is the best protection. While some online sources are making scary claims about how dangerous it is, the CDC warns against panic selling which can lead to unnecessary illness. We should focus on getting vaccinated or taking antiviral medication if symptoms appear, and remember that rest allows your immune system to fight off the infection entirely.",Otherwise,Fear Monger,439,qwen,351c120261fd961a2dd8f1c7
+HPV,"You won't believe what I heard about HPV. I was shocked when I heard that some people say HPV causes cancer. How could they be so irresponsible?""
+
+""Can you believe it? Some people even say that HPV causes cancer!""
+
+""Yes, I heard about it. I'm not sure how to feel about it.",Anti-Vaccine Advocate,Fear Monger,352,gemma,698d3fa4b170d47ebdc2b5dd

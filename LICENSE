@@ -1,0 +1,19 @@
+HealthRoleBench License (Code and Data)
+
+Copyright (c) 2026 Anonymous Authors
+
+The code and the HealthRoleBench corpus are licensed under the Creative Commons
+Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0),
+https://creativecommons.org/licenses/by-nc/4.0/legalcode, subject to the following
+additional use restrictions.
+
+1. The corpus contains synthetic health misinformation. It may be used only for research
+   on detecting, analyzing, or mitigating misinformation.
+2. You may not use the corpus or the code to generate misinformation, to train or
+   fine-tune models whose purpose is to generate misinformation, or to disseminate
+   misinformation.
+3. Any post reproduced from the corpus, in whole or in part, must be clearly labeled as
+   synthetic misinformation.
+4. Redistributions must include this license, including these restrictions.
+
+THE CODE AND DATA ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
