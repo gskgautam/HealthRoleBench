@@ -84,10 +84,11 @@ HealthRoleBench contains synthetic health misinformation. It is released for res
 ## Citation
 
 ```bibtex
-@article{Gautam Siddharth Kashyap, Rafiq Ali, Sushant Kumar Ray, Ebad Shabbir, and Usman Naseem,
-  title   = {Who Spreads Misinformation? Benchmarking LLMs on Role-Aware Health Narratives},
-  author  = {Anonymous Authors},
-  note    = {Under review},
-  year    = {2026}
+@unpublished{Kashyap2026RoleAwareHealth,
+  title  = {Who Spreads Misinformation? Benchmarking LLMs on Role-Aware Health Narratives},
+  author = {Kashyap, Gautam Siddharth and Ali, Rafiq and Ray, Sushant Kumar and Shabbir, Ebad and Naseem, Usman},
+  note   = {Manuscript Under Review},
+  year   = {2026}
 }
+
 ```
