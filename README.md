@@ -1,24 +1,18 @@
 # HealthRoleBench
 
-Code and results for *Who Spreads Misinformation? Benchmarking LLMs on Role-Aware Health Narratives* (under review).
-
-HealthRoleBench is a controlled benchmark of 60,000 synthetic posts on COVID-19, HPV, and influenza vaccination. Five generators (GPT-4o, Qwen3.5-2B, LLaMA-2-7B-chat, Mistral-7B-Instruct-v0.2, Gemma-7B) each contribute 12,000 posts. Every post is labeled with one of four motivational roles (Misinformation Spreader, Religious Conspiracy Theorist, Fear Monger, Anti-Vaccine Advocate) or the Otherwise class.
-
 ## Repository map
 
 | Path | Contents |
 |---|---|
-| `healthrolebench/common/` | Corpus loader, leakage-aware splits, label parser, evaluation items |
-| `healthrolebench/curation/` | Corpus statistics, leakage groups, threshold sweeps, evaluation set, audit sample |
-| `healthrolebench/models/` | Fine-tuned encoders, linear heads on frozen LLMs, zero-shot classifiers (open and GPT-4o) |
-| `healthrolebench/analysis/` | Stress tests, bootstrap significance, multi-label evaluation, transfer to real posts |
-| `healthrolebench/reporting/` | Table exports and the pgfplots figures used in the paper |
-| `scripts/` | GPU lane launchers for encoders, linear heads, and zero-shot runs |
-| `configs/filter_v1/` | Filter protocol (NLI thresholds, role lexicons) and pinned encoder revisions |
-| `results/tables/` | Aggregate CSV for every table and figure in the paper |
-| `results/figures/` | Generated LaTeX for the paper figures |
-| `tests/` | CPU unit tests (no private data) |
-| `reproduce.sh` | Runs every stage in dependency order |
+| `healthrolebench/common/` | Corpus Loader, Leakage-Aware Splits, Label Parser, Evaluation Items |
+| `healthrolebench/curation/` | Corpus Statistics, Leakage Groups, Threshold Sweeps, Evaluation Set, Audit Sample |
+| `healthrolebench/models/` | Fine-Tuned Encoders, Linear Heads on Frozen LLMs, Zero-Shot Classifiers (open and GPT-4o) |
+| `healthrolebench/analysis/` | Stress Tests, Bootstrap Significance, Multi-Label Evaluation, Transfer to Real Posts |
+| `healthrolebench/reporting/` | Table Exports and the pgfplots Figures used in the Paper |
+| `scripts/` | GPU Lane Launchers for Encoders, Linear Heads, and Zero-Shot Runs |
+| `configs/filter_v1/` | Filter Protocol (NLI Thresholds, Role Lexicons) and Pinned Encoder Revisions |
+| `tests/` | CPU Unit Tests (no private data) |
+| `reproduce.sh` | Runs Every Stage in Dependency Order |
 
 Generation prompts and generation scripts are not part of this repository (see [Responsible Use](#responsible-use)). API keys, model weights, raw generations, and annotation forms are also excluded.
 
@@ -50,8 +44,6 @@ python3 -c "from pathlib import Path; from healthrolebench.common.data import lo
 
 `data/healthrolebench_v1.csv` has one row per post with the columns `generator`, `sample_id`, `disease`, `label`, `stage` (`bulk` or `topup`), `group` (leakage group used by every split), and `text`. Expected SHA-256 of the CSV is `45037b80a64194a608aec2fb08a883a45e5644b42686be64f3ef153395f0bcaf`. Expected counts are 60,000 posts, with 7,500 per role and 30,000 Otherwise.
 
-The loader uses this file whenever it is present. Curation-stage outputs (filter scores, threshold sweeps, audit sample, evaluation set) are derived from the full curation snapshot, which contains the generation prompts and is shared with researchers on request under the same license.
-
 ## 3. Reproduce the Paper
 
 `reproduce.sh PROJECT_ROOT [STAGE ...]` runs the stages below in order. Every step writes its outputs once to `data/experiments/` and refuses to overwrite them, so the script can be resumed after an interruption.
@@ -74,16 +66,16 @@ The loader uses this file whenever it is present. Curation-stage outputs (filter
 | Fig. 3(a, c) | after annotation | `python -m healthrolebench.curation.human_audit score --project-root .` and `python -m healthrolebench.analysis.multilabel --project-root .` | CPU |
 | Paper figures | `tables` | `python -m healthrolebench.reporting.paper_figures --assets results/tables --out results/figures` | CPU |
 
-Fig. 3(d) also needs the CONSTRAINT@AAAI-2021 COVID-19 corpus (Patwa et al., 2021) in `data/external/constraint_covid19/{train,val,test}.csv`; the experiments used the Hugging Face copy `nanyy1025/covid_fake_news` at revision `079d310163b36c9a72fe327d905cf21a21b8d5a6`. The GPT-4o stage reads `OPENAI_API_KEY` from the environment; never store keys in the repository.
+Fig. 3(d) also needs the CONSTRAINT@AAAI-2021 COVID-19 corpus in `data/external/constraint_covid19/{train,val,test}.csv`; the experiments used the Hugging Face copy `nanyy1025/covid_fake_news` at revision `079d310163b36c9a72fe327d905cf21a21b8d5a6`. The GPT-4o stage reads `OPENAI_API_KEY` from the environment; never store keys in the repository.
 
 ## 4. Settings
 
 - **Splits.** Posts linked through top-up examples or with trigram cosine similarity of at least 0.8 share a `group` and never cross a split.
-- **Fine-tuned encoders.** BERT, DistilBERT, RoBERTa; learning rate 1e-5, batch size 32, three epochs, seeds 42–44.
-- **Linear heads.** Frozen final-layer representations; full-batch AdamW, learning rate 0.01, class-weighted loss, steps selected on validation.
-- **Zero-shot classifiers.** Deterministic decoding, at most 48 new tokens, parser `labels-v2` with edit-distance tolerance 2. A classifier is not scored on posts from its own generator.
+- **Fine-Tuned Encoders.** BERT, DistilBERT, RoBERTa; learning rate 1e-5, batch size 32, three epochs, seeds 42–44.
+- **Linear Heads.** Frozen final-layer representations; full-batch AdamW, learning rate 0.01, class-weighted loss, steps selected on validation.
+- **Zero-Shot Classifiers.** Deterministic decoding, at most 48 new tokens, parser `labels-v2` with edit-distance tolerance 2. A classifier is not scored on posts from its own generator.
 - **Statistics.** 95% percentile bootstrap intervals (1,000 resamples), paired bootstrap tests, Holm correction within each family.
-- **Model revisions.** Pinned in `healthrolebench/models/zero_shot.py`, `healthrolebench/models/train_encoder.py`, and `configs/filter_v1/encoder_revisions.json`.
+- **Model Revisions.** Pinned in `healthrolebench/models/zero_shot.py`, `healthrolebench/models/train_encoder.py`, and `configs/filter_v1/encoder_revisions.json`.
 
 ## Responsible Use
 
@@ -92,7 +84,7 @@ HealthRoleBench contains synthetic health misinformation. It is released for res
 ## Citation
 
 ```bibtex
-@article{anonymous2026healthrolebench,
+@article{Gautam Siddharth Kashyap, Rafiq Ali, Sushant Kumar Ray, Ebad Shabbir, and Usman Naseem,
   title   = {Who Spreads Misinformation? Benchmarking LLMs on Role-Aware Health Narratives},
   author  = {Anonymous Authors},
   note    = {Under review},
