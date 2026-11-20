@@ -64,7 +64,7 @@ python3 -c "from pathlib import Path; from healthrolebench.common.data import lo
 | Fig. 7 and Fig. 8(a, d) | `tables` | `python -m healthrolebench.reporting.encoder_tables --project-root . && python -m healthrolebench.reporting.eval_tables --project-root .` | CPU |
 | Fig. 6(d) | `tables` | `python -m healthrolebench.analysis.significance --project-root .` | CPU |
 | Fig. 3(a, c) | after annotation | `python -m healthrolebench.curation.human_audit score --project-root .` and `python -m healthrolebench.analysis.multilabel --project-root .` | CPU |
-| Paper figures | `tables` | `python -m healthrolebench.reporting.paper_figures --assets results/tables --out results/figures` | CPU |
+| Paper figures | `tables` | `python -m healthrolebench.reporting.paper_figures --assets paper_assets --out paper_assets/figures_tex` | CPU |
 
 Fig. 3(d) also needs the CONSTRAINT@AAAI-2021 COVID-19 corpus in `data/external/constraint_covid19/{train,val,test}.csv`; the experiments used the Hugging Face copy `nanyy1025/covid_fake_news` at revision `079d310163b36c9a72fe327d905cf21a21b8d5a6`. The GPT-4o stage reads `OPENAI_API_KEY` from the environment; never store keys in the repository.
 
